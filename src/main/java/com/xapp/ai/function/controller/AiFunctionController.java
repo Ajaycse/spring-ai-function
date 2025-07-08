@@ -33,14 +33,14 @@ public class AiFunctionController {
 
     ChatResponse response
         = chatModel.call(new Prompt(List.of(userMessage), OpenAiChatOptions.builder()
-            .toolCallbacks(FunctionToolCallback.builder("getCurrentWeather", new WeatherService(weatherConfigProperties))
-                .description("Get the weather in location")
-                .inputType(WeatherService.Request.class)
-                .build())
-            .build()));
+        .toolCallbacks(FunctionToolCallback.builder("getCurrentWeather",
+                new WeatherService(weatherConfigProperties))
+            .description("Get the weather in location")
+            .inputType(WeatherService.Request.class)
+            .build())
+        .build()));
 
     return response.getResult().getOutput().getText();
   }
-
 
 }
