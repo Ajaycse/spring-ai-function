@@ -6,6 +6,7 @@ spring:
       api-key: ${OPEN_AI_KEY}
       model: gpt-4o
 
-x-rapidapi-host: open-weather13.p.rapidapi.com
-x-rapidapi-key: ${RAPID_API_KEY}
-x-rapidapi-url: https://open-weather13.p.rapidapi.com/city
+x-rapidapi:
+  host: open-weather13.p.rapidapi.com
+  key: 61c4576e49msh0a834a54f5f5564p171154jsndc10895df2c4
+  url: https://open-weather13.p.rapidapi.com/city
