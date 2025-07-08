@@ -18,7 +18,7 @@ public class Config {
   private final WeatherConfigProperties weatherConfigProperties;
 
   @Bean
-  @Description(("Get the current weather in location in Celsius or Fahrenheit"))
+  @Description(("Get the current weather in location in Celsius"))
   public Function<Request, Response> getCurrentWeather() {
     return new WeatherService(weatherConfigProperties);
   }
