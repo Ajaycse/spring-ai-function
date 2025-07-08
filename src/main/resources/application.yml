@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-ai-function
+  ai:
+    openai:
+      api-key: ${OPEN_AI_KEY}
+      model: gpt-4o
+
+x-rapidapi-host: open-weather13.p.rapidapi.com
+x-rapidapi-key: ${RAPID_API_KEY}
+x-rapidapi-url: https://open-weather13.p.rapidapi.com/city
